@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_ku_tiger_xml.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/ku_tiger_xml.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_activity_svrlogin.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_svrlogin.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_activity_loginfin.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_loginfin.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_btn_lock.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/btn_lock.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_mri_head_brain_normal.jpeg.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/mri_head_brain_normal.jpeg"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_activity_fin.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_fin.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_padlock.png.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/padlock.png"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_item_financial.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/item_financial.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_ku_tiger_black.png.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/ku_tiger_black.png"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_ku_tiger.png.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/ku_tiger.png"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_activity_pub.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_pub.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_activity_med.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_med.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_item_public.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/item_public.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_page_webview.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/page_webview.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/drawable_mri_body_side_normal.jpeg.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/drawable/mri_body_side_normal.jpeg"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/merged_res/debug/layout_item_medical.xml.flat",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/item_medical.xml"
+    }
+]

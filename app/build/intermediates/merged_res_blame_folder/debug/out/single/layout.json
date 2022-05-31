@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_loginfin.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_loginfin.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_public.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/item_public.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_svrlogin.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_svrlogin.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_medical.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/item_medical.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_fin.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_fin.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/login_svr_page.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/login_svr_page.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_med.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_med.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/page_webview.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/page_webview.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_financial.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/item_financial.xml"
+    },
+    {
+        "merged": "/Users/devronkim/AndroidStudioProjects/test0/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_pub.xml",
+        "source": "/Users/devronkim/AndroidStudioProjects/test0/app/src/main/res/layout/activity_pub.xml"
+    }
+]
