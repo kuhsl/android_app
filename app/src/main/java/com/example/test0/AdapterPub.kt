@@ -10,27 +10,29 @@ import android.widget.TextView
 class AdapterPub (val context: Context, val listPub: ArrayList<ClassPub?>) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View = LayoutInflater.from(context).inflate(R.layout.item_public, null)
-        val PubId = view.findViewById<TextView>(R.id.pubId_tv)
-        val PubName = view.findViewById<TextView>(R.id.pubName_tv)
-        val PubRelation = view.findViewById<TextView>(R.id.pubRelation_tv)
-        val PubBirth = view.findViewById<TextView>(R.id.pubBirth_tv)
-        val PubSsn = view.findViewById<TextView>(R.id.pubSsn_tv)
-        val PubSex = view.findViewById<TextView>(R.id.pubSex_tv)
+        val pubId = view.findViewById<TextView>(R.id.pubId_tv)
+        val pubName = view.findViewById<TextView>(R.id.pubName_tv)
+        val pubRelations = view.findViewById<TextView>(R.id.pubRelations_tv)
+        val pubAddress = view.findViewById<TextView>(R.id.pubAddress_tv)
+        val pubBirth = view.findViewById<TextView>(R.id.pubBirth_tv)
+        val pubSsn = view.findViewById<TextView>(R.id.pubSsn_tv)
+        val pubSex = view.findViewById<TextView>(R.id.pubSex_tv)
 
         val account = listPub[position]
 
-        PubId.text = account?.user_id
-        PubName.text = "이름: " + account?.name
-        PubRelation.text = "관계: " + account?.relation
-        PubBirth.text = "생일: " + account?.birth
-        PubSsn.text = "SSN: " + account?.ssn
-        PubSex.text = "성별: " + account?.sex
+        pubId.text = account?.id
+        pubName.text = "이름: " + account?.name
+        pubRelations.text = "관계: " + account?.relations
+        pubAddress.text = "주소: " + account?.address
+        pubBirth.text = "생일: " + account?.birth
+        pubSsn.text = "SSN: " + account?.ssn
+        pubSex.text = "성별: " + account?.sex
 
         return view
     }
 
     override fun getItem(position: Int): String? {
-        return listPub[position]?.user_id
+        return listPub[position]?.id
     }
 
     override fun getItemId(position: Int): Long {

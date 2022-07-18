@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.activity_fin.ToHome
 import kotlinx.android.synthetic.main.activity_fin.btnAddAccount
 import kotlinx.android.synthetic.main.activity_fin.btnGetData
 import kotlinx.android.synthetic.main.activity_fin.list_view
+import kotlinx.android.synthetic.main.activity_pub.*
 import okhttp3.JavaNetCookieJar
 import okhttp3.OkHttpClient
 import retrofit2.Call
@@ -27,10 +28,6 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 
 class ScreenFin : AppCompatActivity() {
     val binding by lazy { ActivityFinBinding.inflate(layoutInflater) }
-
-    var AccountList = arrayListOf<ClassFin?>(
-        ClassFin("001","123456789","100,000")
-    )
 
     fun baseUrl(): String {
         if (intent.hasExtra("base_url")) {
@@ -48,9 +45,7 @@ class ScreenFin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        AccountList = arrayListOf(
-            getStringArrayPref("financial")[0]
-        )
+
         var TransactionList = getStringTXPref("financial")
 
 //        setStringArrayPref("financial", AccountList)
@@ -58,9 +53,6 @@ class ScreenFin : AppCompatActivity() {
 
         val scope0 = "financial_data"
         val base_url = baseUrl()
-        val Adapter = AdapterFin(this, AccountList, TransactionList)
-        list_view.adapter = Adapter
-
         var currCookie = ""
         if (intent.hasExtra("current_cookie")) {
             currCookie = intent.getStringExtra("current_cookie").toString()
@@ -71,7 +63,8 @@ class ScreenFin : AppCompatActivity() {
 
 
         CookieManager.getInstance().setCookie(base_url, currCookie)
-
+        //operator 측에서 값 가져오고 화면에 뿌림
+        loadFinData(base_url,currCookie,scope0)
 
         btnAddAccount.setOnClickListener {
             CommonLogin(this, currCookie, scope0).show()
@@ -132,35 +125,7 @@ class ScreenFin : AppCompatActivity() {
         }
 
         btnGetData.setOnClickListener {
-            var retrofit = ApiClient.getApiClientScalars(base_url, currCookie)
-            var finDatService: SVRFinDatService = retrofit.create(SVRFinDatService::class.java)
-
-            finDatService.getFinData(scope0).enqueue(object:
-                Callback<String> {
-                override fun onFailure(call: Call<String>, t: Throwable) {
-                    Log.d("tag", "Error: " + t.message)
-                    var dialog = AlertDialog.Builder(this@ScreenFin)
-                    dialog.setTitle("Error")
-                    dialog.setMessage("Process Failed")
-                    dialog.show()
-                }
-                override fun onResponse(call: Call<String>, response: Response<String>) {
-                    Log.d("tag", "msg: "+response.body())
-                    Log.d("tag", response.raw().toString())
-
-                    var str = response.body().toString()
-                    var data_json = str.split('[')[1].split(']')[0]
-                    Log.d("tag", data_json)
-                    var data_class = Gson().fromJson(data_json, ClassFin::class.java)
-                    setStringArrayPref("financial", arrayListOf(data_class))
-
-                    var tx_json = str.split('[')[2].split(']')[0]
-                    Log.d("tag", tx_json)
-                    setStringTXPref("financial", tx_json)
-
-                    finish();
-                }
-            })
+            loadFinData(base_url, currCookie, scope0)
         }
 
         btnAddAccount.setOnClickListener {
@@ -201,5 +166,38 @@ class ScreenFin : AppCompatActivity() {
         val json = prefs.getString(key, null)
 
         return json.toString()
+    }
+
+    fun loadFinData(base_url:String, currCookie:String, scope0:String){
+        var retrofit = ApiClient.getApiClientScalars(base_url, currCookie)
+        var finDatService: SVRFinDatService = retrofit.create(SVRFinDatService::class.java)
+
+        finDatService.getFinData(scope0).enqueue(object:
+            Callback<String> {
+            override fun onFailure(call: Call<String>, t: Throwable) {
+                Log.d("tag", "Error: " + t.message)
+                var dialog = AlertDialog.Builder(this@ScreenFin)
+                dialog.setTitle("Error")
+                dialog.setMessage("Process Failed")
+                dialog.show()
+            }
+            override fun onResponse(call: Call<String>, response: Response<String>) {
+                Log.d("tag", "msg: "+response.body())
+                Log.d("tag", response.raw().toString())
+
+                var str = response.body().toString()
+                var data_json = str.split('[')[1].split(']')[0]
+                Log.d("tag", data_json)
+                var data_class = Gson().fromJson(data_json, ClassFin::class.java)
+                setStringArrayPref("financial", arrayListOf(data_class))
+
+                var tx_json = str.split('[')[2].split(']')[0]
+                Log.d("tag", tx_json)
+                setStringTXPref("financial", tx_json)
+
+                val Adapter = AdapterFin(this@ScreenFin, arrayListOf(data_class), tx_json)
+                list_view.adapter = Adapter
+            }
+        })
     }
 }

@@ -5,6 +5,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.BaseColumns
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
@@ -24,6 +25,15 @@ class MainActivity : AppCompatActivity() {
     val base_url = "http://163.152.71.223"
 
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+
+    object FeedReaderContract {
+        // Table contents are grouped together in an anonymous object.
+        object FeedEntry : BaseColumns {
+            const val TABLE_NAME = "entry"
+            const val COLUMN_NAME_TITLE = "title"
+            const val ID = "id"
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,6 +96,7 @@ class MainActivity : AppCompatActivity() {
                 dialog.setTitle("Login Success!")
                 dialog.setMessage("ID : $opID")
                 dialog.show()
+
             }
         }
 

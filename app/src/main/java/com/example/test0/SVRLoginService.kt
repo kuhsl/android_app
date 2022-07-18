@@ -8,7 +8,7 @@ import retrofit2.http.POST
 interface SVRLoginService {
     @FormUrlEncoded
     @POST("/login")
-    fun requestSignup(
+    fun requestLogin(
         @Field("id") id:String,
         @Field("password") password:String
     ) : Call<String>

@@ -1,7 +1,5 @@
 package com.example.test0
 
-import android.accounts.Account
-import android.app.Dialog
 import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
@@ -35,10 +33,6 @@ import java.net.URLEncoder
 class ScreenPub : AppCompatActivity() {
     val binding by lazy { ActivityPubBinding.inflate(layoutInflater) }
 
-    var AccountList = arrayListOf<ClassPub?>(
-//        ClassPub("1995-09-11", "김범중", "본인", "M", "00000","000")
-    )
-
     fun baseUrl(): String {
         if (intent.hasExtra("base_url")) {
             val base_url = intent.getStringExtra("base_url").toString()
@@ -55,15 +49,8 @@ class ScreenPub : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        AccountList = arrayListOf(
-            getStringArrayPref("public")[0]
-        )
-//        setStringArrayPref("public", AccountList)
         val scope0 = "public_data"
         val base_url = baseUrl()
-        val Adapter = AdapterPub(this, AccountList)
-        list_view.adapter = Adapter
-
         var currCookie = ""
         if (intent.hasExtra("current_cookie")) {
             currCookie = intent.getStringExtra("current_cookie").toString()
@@ -73,6 +60,10 @@ class ScreenPub : AppCompatActivity() {
         }
 
         CookieManager.getInstance().setCookie(base_url, currCookie)
+
+        //operator 측에서 값 가져오고 화면에 뿌림
+        loadPubData(base_url,currCookie,scope0)
+
 
 // Click Listener: when an item on the listview is clicked
         list_view.onItemClickListener = AdapterView.OnItemClickListener{
@@ -129,29 +120,7 @@ class ScreenPub : AppCompatActivity() {
         }
 
         btnGetData.setOnClickListener {
-            var retrofit = ApiClient.getApiClientScalars(base_url, currCookie)
-            var pubDatService: SVRPubDatService = retrofit.create(SVRPubDatService::class.java)
-
-            pubDatService.getPubData(scope0).enqueue(object:
-                Callback<String> {
-                override fun onFailure(call: Call<String>, t: Throwable) {
-                    Log.d("tag", "Error: " + t.message)
-                    var dialog = AlertDialog.Builder(this@ScreenPub)
-                    dialog.setTitle("Error")
-                    dialog.setMessage("Process Failed")
-                    dialog.show()
-                }
-                override fun onResponse(call: Call<String>, response: Response<String>) {
-                    Log.d("tag", "msg: "+response.body())
-                    Log.d("tag", response.raw().toString())
-                    var str = response.body().toString()
-                    var data_json = str.split('[')[1].split(']')[0]
-                    Log.d("tag", data_json)
-                    var data_class = Gson().fromJson(data_json, ClassPub::class.java)
-                    setStringArrayPref("public", arrayListOf(data_class))
-                    finish();
-                }
-            })
+            loadPubData(base_url, currCookie, scope0)
         }
 
         btnAddAccount.setOnClickListener {
@@ -170,15 +139,46 @@ class ScreenPub : AppCompatActivity() {
         editor.putString(key, json)
         editor.apply()
     }
+
     fun getStringArrayPref(key: String): ArrayList<ClassPub> {
         val prefs = getSharedPreferences("public_data", Context.MODE_PRIVATE)
-        val json = prefs.getString(key, null)
+        val json = prefs.getString(key, "")
         val gson = Gson()
 
         val storedData: ArrayList<ClassPub> = gson.fromJson(
             json,
-            object : TypeToken<ArrayList<ClassPub?>>() {}.type
+            object : TypeToken<ArrayList<ClassPub?>>(){}.type
         )
+
         return storedData
+    }
+
+    fun loadPubData(base_url:String, currCookie:String, scope0:String){
+        var retrofit = ApiClient.getApiClientScalars(base_url, currCookie)
+        var pubDatService: SVRPubDatService = retrofit.create(SVRPubDatService::class.java)
+
+        pubDatService.getPubData(scope0).enqueue(object:
+            Callback<String> {
+            override fun onFailure(call: Call<String>, t: Throwable) {
+                Log.d("tag", "Error: " + t.message)
+                var dialog = AlertDialog.Builder(this@ScreenPub)
+                dialog.setTitle("Error")
+                dialog.setMessage("Process Failed")
+                dialog.show()
+            }
+            override fun onResponse(call: Call<String>, response: Response<String>) {
+                Log.d("tag", "msg: "+response.body())
+                Log.d("tag", response.raw().toString())
+                var str = response.body().toString()
+                var data_json = str.split('[')[1].split(']')[0]
+                Log.d("tag", data_json)
+                var data_class = Gson().fromJson(data_json, ClassPub::class.java)
+                setStringArrayPref("public", arrayListOf(data_class)) //받아온 값 저장
+
+                val Adapter = AdapterPub(this@ScreenPub, arrayListOf(data_class))
+                list_view.adapter = Adapter
+                //finish();
+            }
+        })
     }
 }

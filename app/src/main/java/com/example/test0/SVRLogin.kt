@@ -54,7 +54,8 @@ class SVRLogin : AppCompatActivity() {
             var id_input = edit_id.text.toString()
             var pw_input = edit_pw.text.toString()
 
-            loginService.requestSignup(id_input,pw_input).enqueue(object: Callback<String>{
+
+            loginService.requestLogin(id_input,pw_input).enqueue(object: Callback<String>{
                 override fun onFailure(call: Call<String>, t: Throwable) {
                     dialogFailure(t.message.toString())
                 }

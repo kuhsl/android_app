@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_med.ToHome
 import kotlinx.android.synthetic.main.activity_med.btnAddAccount
 import kotlinx.android.synthetic.main.activity_med.btnGetData
 import kotlinx.android.synthetic.main.activity_med.list_view
+import kotlinx.android.synthetic.main.activity_pub.*
 import okhttp3.JavaNetCookieJar
 import okhttp3.OkHttpClient
 import retrofit2.Call
@@ -29,10 +30,6 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
 class ScreenMed : AppCompatActivity() {
 
     val binding by lazy { ActivityMedBinding.inflate(layoutInflater) }
-
-    var AccountList = arrayListOf<ClassMed?>(
-//        ClassMed("2022-01-01","https://ichef.bbci.co.uk/news/976/cpsprodpb/A1D4/production/_123482414_scanningimage1.jpg", "MRI")
-    )
 
     fun baseUrl(): String {
         if (intent.hasExtra("base_url")) {
@@ -51,16 +48,8 @@ class ScreenMed : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        AccountList = arrayListOf(
-            getStringArrayPref("medical")[0]
-        )
-//        setStringArrayPref("medical", AccountList)
-
         val scope0 = "medical_data"
         val base_url = baseUrl()
-        val Adapter = AdapterMed(this, AccountList)
-        list_view.adapter = Adapter
-
         var currCookie = ""
         if (intent.hasExtra("current_cookie")) {
             currCookie = intent.getStringExtra("current_cookie").toString()
@@ -69,8 +58,10 @@ class ScreenMed : AppCompatActivity() {
             Toast.makeText(this, "No Cookie", Toast.LENGTH_SHORT).show()
         }
 
-
         CookieManager.getInstance().setCookie(base_url, currCookie)
+
+        //load and set data
+        loadMedData(base_url,currCookie,scope0)
 
 // Click Listener: when an item on the listview is clicked
         list_view.onItemClickListener = AdapterView.OnItemClickListener{
@@ -127,29 +118,7 @@ class ScreenMed : AppCompatActivity() {
         }
 
         btnGetData.setOnClickListener {
-            var retrofit = ApiClient.getApiClientScalars(base_url, currCookie)
-            var medDatService: SVRMedDatService = retrofit.create(SVRMedDatService::class.java)
-
-            medDatService.getMedData(scope0).enqueue(object:
-                Callback<String> {
-                override fun onFailure(call: Call<String>, t: Throwable) {
-                    Log.d("tag", "Error: " + t.message)
-                    var dialog = AlertDialog.Builder(this@ScreenMed)
-                    dialog.setTitle("Error")
-                    dialog.setMessage("Process Failed")
-                    dialog.show()
-                }
-                override fun onResponse(call: Call<String>, response: Response<String>) {
-                    Log.d("tag", "msg: "+response.body())
-                    Log.d("tag", response.raw().toString())
-                    var str = response.body().toString()
-                    var data_json = str.split('[')[1].split(']')[0]
-                    Log.d("tag", data_json)
-                    var data_class = Gson().fromJson(data_json, ClassMed::class.java)
-                    setStringArrayPref("medical", arrayListOf(data_class))
-                    finish();
-                }
-            })
+            loadMedData(base_url, currCookie, scope0)
         }
 
         btnAddAccount.setOnClickListener {
@@ -178,5 +147,32 @@ class ScreenMed : AppCompatActivity() {
             object : TypeToken<ArrayList<ClassMed?>>() {}.type
         )
         return storedData
+    }
+    fun loadMedData(base_url: String, currCookie: String, scope0: String){
+        var retrofit = ApiClient.getApiClientScalars(base_url, currCookie)
+        var medDatService: SVRMedDatService = retrofit.create(SVRMedDatService::class.java)
+
+        medDatService.getMedData(scope0).enqueue(object:
+            Callback<String> {
+            override fun onFailure(call: Call<String>, t: Throwable) {
+                Log.d("tag", "Error: " + t.message)
+                var dialog = AlertDialog.Builder(this@ScreenMed)
+                dialog.setTitle("Error")
+                dialog.setMessage("Process Failed")
+                dialog.show()
+            }
+            override fun onResponse(call: Call<String>, response: Response<String>) {
+                Log.d("tag", "msg: "+response.body())
+                Log.d("tag", response.raw().toString())
+                var str = response.body().toString()
+                var data_json = str.split('[')[1].split(']')[0]
+                Log.d("tag", data_json)
+                var data_class = Gson().fromJson(data_json, ClassMed::class.java)
+                setStringArrayPref("medical", arrayListOf(data_class)) //받아온 값 저장
+
+                val Adapter = AdapterMed(this@ScreenMed, arrayListOf(data_class))
+                list_view.adapter = Adapter
+            }
+        })
     }
 }
