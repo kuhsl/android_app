@@ -32,6 +32,9 @@ public final class ItemPublicBinding implements ViewBinding {
   public final ImageView imageIcon;
 
   @NonNull
+  public final TextView pubAddressTv;
+
+  @NonNull
   public final TextView pubBirthTv;
 
   @NonNull
@@ -41,7 +44,7 @@ public final class ItemPublicBinding implements ViewBinding {
   public final TextView pubNameTv;
 
   @NonNull
-  public final TextView pubRelationTv;
+  public final TextView pubRelationsTv;
 
   @NonNull
   public final TextView pubSexTv;
@@ -50,17 +53,19 @@ public final class ItemPublicBinding implements ViewBinding {
   public final TextView pubSsnTv;
 
   private ItemPublicBinding(@NonNull LinearLayout rootView, @NonNull CardView cardview,
-      @NonNull RelativeLayout firstLin, @NonNull ImageView imageIcon, @NonNull TextView pubBirthTv,
-      @NonNull TextView pubIdTv, @NonNull TextView pubNameTv, @NonNull TextView pubRelationTv,
-      @NonNull TextView pubSexTv, @NonNull TextView pubSsnTv) {
+      @NonNull RelativeLayout firstLin, @NonNull ImageView imageIcon,
+      @NonNull TextView pubAddressTv, @NonNull TextView pubBirthTv, @NonNull TextView pubIdTv,
+      @NonNull TextView pubNameTv, @NonNull TextView pubRelationsTv, @NonNull TextView pubSexTv,
+      @NonNull TextView pubSsnTv) {
     this.rootView = rootView;
     this.cardview = cardview;
     this.firstLin = firstLin;
     this.imageIcon = imageIcon;
+    this.pubAddressTv = pubAddressTv;
     this.pubBirthTv = pubBirthTv;
     this.pubIdTv = pubIdTv;
     this.pubNameTv = pubNameTv;
-    this.pubRelationTv = pubRelationTv;
+    this.pubRelationsTv = pubRelationsTv;
     this.pubSexTv = pubSexTv;
     this.pubSsnTv = pubSsnTv;
   }
@@ -110,6 +115,12 @@ public final class ItemPublicBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.pubAddress_tv;
+      TextView pubAddressTv = ViewBindings.findChildViewById(rootView, id);
+      if (pubAddressTv == null) {
+        break missingId;
+      }
+
       id = R.id.pubBirth_tv;
       TextView pubBirthTv = ViewBindings.findChildViewById(rootView, id);
       if (pubBirthTv == null) {
@@ -128,9 +139,9 @@ public final class ItemPublicBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.pubRelation_tv;
-      TextView pubRelationTv = ViewBindings.findChildViewById(rootView, id);
-      if (pubRelationTv == null) {
+      id = R.id.pubRelations_tv;
+      TextView pubRelationsTv = ViewBindings.findChildViewById(rootView, id);
+      if (pubRelationsTv == null) {
         break missingId;
       }
 
@@ -147,7 +158,7 @@ public final class ItemPublicBinding implements ViewBinding {
       }
 
       return new ItemPublicBinding((LinearLayout) rootView, cardview, firstLin, imageIcon,
-          pubBirthTv, pubIdTv, pubNameTv, pubRelationTv, pubSexTv, pubSsnTv);
+          pubAddressTv, pubBirthTv, pubIdTv, pubNameTv, pubRelationsTv, pubSexTv, pubSsnTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

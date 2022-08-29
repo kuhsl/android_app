@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleEngine1"
+        android:layout_width="329dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="심혈관계 질병 유전 확률"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/valueE66"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/titleEngine1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="100.0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/percentE66"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titleEngine1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/valueE66"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textE66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueE66"
+        android:layout_alignLeft="@+id/valueE66"
+        android:text="비만(E66)"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/valueI10"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/titleEngine1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/percentE66"
+        android:text="100.0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/percentI10"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titleEngine1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/valueI10"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textI10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueI10"
+        android:layout_alignLeft="@+id/valueI10"
+        android:text="고혈압(I10)"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/valueR81"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/titleEngine1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/percentI10"
+        android:text="100.0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/percentR81"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titleEngine1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/valueR81"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textR81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueR81"
+        android:layout_alignLeft="@+id/valueR81"
+        android:text="당뇨(R81)"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/titleEngine2"
+        android:layout_width="330dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/valueE66"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="경제적 수준에 따른 질병발생률"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/firstLabelEngine2"
+        android:layout_width="140dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/titleEngine2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="1-4 구간"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/valueFirstLabelEngine2"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/titleEngine2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/firstLabelEngine2"
+        android:text="100.0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/percentFirstLabelEngine2"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/titleEngine2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/valueFirstLabelEngine2"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/secondLabelEngine2"
+        android:layout_width="140dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/firstLabelEngine2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="5-7 구간"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/valueSecondLabelEngine2"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/firstLabelEngine2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/secondLabelEngine2"
+        android:text="100.0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/percentSecondLabelEngine2"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/firstLabelEngine2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/valueSecondLabelEngine2"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/thirdLabelEngine2"
+        android:layout_width="140dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/secondLabelEngine2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="8-10 구간 이상"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/valueThirdLabelEngine2"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/secondLabelEngine2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/thirdLabelEngine2"
+        android:text="100.0"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/percentThirdLabelEngine2"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/secondLabelEngine2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/valueThirdLabelEngine2"
+        android:text="%"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/titleEngine3"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/thirdLabelEngine2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="경제적 수준에 따른 자식 수 분포"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/graphEngine3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleEngine3"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ku_tiger" />
+
+
+</RelativeLayout>

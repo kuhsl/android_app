@@ -70,7 +70,15 @@
                         android:textSize="15sp" />
 
                     <TextView
-                        android:id="@+id/pubRelation_tv"
+                        android:id="@+id/pubRelations_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="가나다라"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/pubAddress_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"

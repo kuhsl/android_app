@@ -6,119 +6,125 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml
+8-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml
+9-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:7:5-42:19
+13-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:7:5-45:19
 14        android:allowBackup="true"
-14-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:8:9-35
+14-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.7.0] /Users/devronkim/.gradle/caches/transforms-3/a927d619ce56469f35da2fa2f2cd3b0b/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.7.0] C:\Users\KOREA\.gradle\caches\transforms-3\d409417959c78fbf29d76ceae9660126\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:extractNativeLibs="false"
 18        android:icon="@mipmap/ic_launcher"
-18-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:9:9-43
+18-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:9:9-43
 19        android:label="@string/app_name"
-19-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:10:9-41
+19-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:10:9-41
 20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:11:9-54
+20-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:11:9-54
 21        android:supportsRtl="true"
-21-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:12:9-35
+21-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:12:9-35
 22        android:testOnly="true"
 23        android:theme="@style/Theme.Test0"
-23-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:13:9-43
+23-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:13:9-43
 24        android:usesCleartextTraffic="true" >
-24-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:14:9-44
+24-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:14:9-44
 25        <activity
-25-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:15:9-17:40
-26            android:name="com.example.test0.SVRLogin"
-26-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:16:13-37
+25-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:15:9-17:40
+26            android:name="com.example.test0.ScreenAnalysisResult"
+26-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:16:13-49
 27            android:exported="false" />
-27-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:17:13-37
+27-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:17:13-37
 28        <activity
-28-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:18:9-20:40
-29            android:name="com.example.test0.ScreenPub"
-29-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:19:13-38
+28-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:18:9-20:40
+29            android:name="com.example.test0.SVRLogin"
+29-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:19:13-37
 30            android:exported="false" />
-30-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:20:13-37
+30-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:20:13-37
 31        <activity
-31-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:21:9-23:40
-32            android:name="com.example.test0.ScreenMed"
-32-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:22:13-38
+31-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:21:9-23:40
+32            android:name="com.example.test0.ScreenPub"
+32-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:22:13-38
 33            android:exported="false" />
-33-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:23:13-37
+33-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:23:13-37
 34        <activity
-34-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:24:9-26:40
-35            android:name="com.example.test0.CommonLogin"
-35-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:25:13-40
+34-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:24:9-26:40
+35            android:name="com.example.test0.ScreenMed"
+35-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:25:13-38
 36            android:exported="false" />
-36-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:26:13-37
+36-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:26:13-37
 37        <activity
-37-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:27:9-29:40
-38            android:name="com.example.test0.LoginFin"
-38-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:28:13-37
+37-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:27:9-29:40
+38            android:name="com.example.test0.CommonLogin"
+38-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:28:13-40
 39            android:exported="false" />
-39-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:29:13-37
+39-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:29:13-37
 40        <activity
-40-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:30:9-32:40
-41            android:name="com.example.test0.ScreenFin"
-41-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:31:13-38
+40-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:30:9-32:40
+41            android:name="com.example.test0.LoginFin"
+41-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:31:13-37
 42            android:exported="false" />
-42-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:32:13-37
+42-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:32:13-37
 43        <activity
-43-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:33:9-41:20
-44            android:name="com.example.test0.MainActivity"
-44-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:34:13-41
-45            android:exported="true" >
-45-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:35:13-36
-46            <intent-filter>
-46-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:36:13-40:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:37:17-69
-47-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:37:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:39:17-77
-49-->/Users/devronkim/AndroidStudioProjects/test0/app/src/main/AndroidManifest.xml:39:27-74
-50            </intent-filter>
-51        </activity>
-52
-53        <service
-53-->[androidx.room:room-runtime:2.4.0-rc01] /Users/devronkim/.gradle/caches/transforms-3/985f06bcc3266027b18356798caf692f/transformed/room-runtime-2.4.0-rc01/AndroidManifest.xml:25:9-28:40
-54            android:name="androidx.room.MultiInstanceInvalidationService"
-54-->[androidx.room:room-runtime:2.4.0-rc01] /Users/devronkim/.gradle/caches/transforms-3/985f06bcc3266027b18356798caf692f/transformed/room-runtime-2.4.0-rc01/AndroidManifest.xml:26:13-74
-55            android:directBootAware="true"
-55-->[androidx.room:room-runtime:2.4.0-rc01] /Users/devronkim/.gradle/caches/transforms-3/985f06bcc3266027b18356798caf692f/transformed/room-runtime-2.4.0-rc01/AndroidManifest.xml:27:13-43
-56            android:exported="false" />
-56-->[androidx.room:room-runtime:2.4.0-rc01] /Users/devronkim/.gradle/caches/transforms-3/985f06bcc3266027b18356798caf692f/transformed/room-runtime-2.4.0-rc01/AndroidManifest.xml:28:13-37
-57
-58        <provider
-58-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-59            android:name="androidx.startup.InitializationProvider"
-59-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
-60            android:authorities="com.example.test0.androidx-startup"
-60-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
-61            android:exported="false" >
-61-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
-62            <meta-data
-62-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-63-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
-64                android:value="androidx.startup" />
-64-->[androidx.emoji2:emoji2:1.0.0] /Users/devronkim/.gradle/caches/transforms-3/e501fbc125b967976ed2a47954f25095/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+43-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:33:9-35:40
+44            android:name="com.example.test0.ScreenFin"
+44-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:34:13-38
+45            android:exported="false" />
+45-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:35:13-37
+46        <activity
+46-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:36:9-44:20
+47            android:name="com.example.test0.MainActivity"
+47-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:37:13-41
+48            android:exported="true" >
+48-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:38:13-36
+49            <intent-filter>
+49-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:39:13-43:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:40:17-69
+50-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:40:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:42:17-77
+52-->C:\Users\KOREA\Desktop\code\android_app-master\app\src\main\AndroidManifest.xml:42:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <service
+56-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\KOREA\.gradle\caches\transforms-3\3b92f4d10a123142ae7758e919faa209\transformed\room-runtime-2.4.0-rc01\AndroidManifest.xml:25:9-28:40
+57            android:name="androidx.room.MultiInstanceInvalidationService"
+57-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\KOREA\.gradle\caches\transforms-3\3b92f4d10a123142ae7758e919faa209\transformed\room-runtime-2.4.0-rc01\AndroidManifest.xml:26:13-74
+58            android:directBootAware="true"
+58-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\KOREA\.gradle\caches\transforms-3\3b92f4d10a123142ae7758e919faa209\transformed\room-runtime-2.4.0-rc01\AndroidManifest.xml:27:13-43
+59            android:exported="false" />
+59-->[androidx.room:room-runtime:2.4.0-rc01] C:\Users\KOREA\.gradle\caches\transforms-3\3b92f4d10a123142ae7758e919faa209\transformed\room-runtime-2.4.0-rc01\AndroidManifest.xml:28:13-37
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+63            android:authorities="com.example.test0.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
 65            <meta-data
-65-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/devronkim/.gradle/caches/transforms-3/e355f95edd1b1b3c63cea57ba8ae1ff1/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-66-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/devronkim/.gradle/caches/transforms-3/e355f95edd1b1b3c63cea57ba8ae1ff1/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
 67                android:value="androidx.startup" />
-67-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/devronkim/.gradle/caches/transforms-3/e355f95edd1b1b3c63cea57ba8ae1ff1/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-68        </provider>
-69    </application>
-70
-71</manifest>
+67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\KOREA\.gradle\caches\transforms-3\734f58e2c86c6d5146967ec2afef1295\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\KOREA\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\KOREA\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\KOREA\.gradle\caches\transforms-3\6678309a7758632c841a28fcb65493d4\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+71        </provider>
+72    </application>
+73
+74</manifest>

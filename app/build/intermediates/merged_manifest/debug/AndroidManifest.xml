@@ -23,6 +23,9 @@
         android:theme="@style/Theme.Test0"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.test0.ScreenAnalysisResult"
+            android:exported="false" />
+        <activity
             android:name="com.example.test0.SVRLogin"
             android:exported="false" />
         <activity

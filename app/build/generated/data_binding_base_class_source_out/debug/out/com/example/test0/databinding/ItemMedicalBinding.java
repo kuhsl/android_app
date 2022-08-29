@@ -32,10 +32,28 @@ public final class ItemMedicalBinding implements ViewBinding {
   public final ImageView imageIcon;
 
   @NonNull
+  public final TextView medDiseaseNameTv;
+
+  @NonNull
+  public final TextView medDiseaseNumTv;
+
+  @NonNull
   public final TextView medImageTv;
 
   @NonNull
   public final ImageView medImageTv1;
+
+  @NonNull
+  public final TextView medNameTv;
+
+  @NonNull
+  public final TextView medRecoveredTv;
+
+  @NonNull
+  public final TextView medSexTv;
+
+  @NonNull
+  public final TextView medSsnTv;
 
   @NonNull
   public final TextView medTimeTv;
@@ -44,14 +62,23 @@ public final class ItemMedicalBinding implements ViewBinding {
   public final TextView medTypeTv;
 
   private ItemMedicalBinding(@NonNull LinearLayout rootView, @NonNull CardView cardview,
-      @NonNull RelativeLayout firstLin, @NonNull ImageView imageIcon, @NonNull TextView medImageTv,
-      @NonNull ImageView medImageTv1, @NonNull TextView medTimeTv, @NonNull TextView medTypeTv) {
+      @NonNull RelativeLayout firstLin, @NonNull ImageView imageIcon,
+      @NonNull TextView medDiseaseNameTv, @NonNull TextView medDiseaseNumTv,
+      @NonNull TextView medImageTv, @NonNull ImageView medImageTv1, @NonNull TextView medNameTv,
+      @NonNull TextView medRecoveredTv, @NonNull TextView medSexTv, @NonNull TextView medSsnTv,
+      @NonNull TextView medTimeTv, @NonNull TextView medTypeTv) {
     this.rootView = rootView;
     this.cardview = cardview;
     this.firstLin = firstLin;
     this.imageIcon = imageIcon;
+    this.medDiseaseNameTv = medDiseaseNameTv;
+    this.medDiseaseNumTv = medDiseaseNumTv;
     this.medImageTv = medImageTv;
     this.medImageTv1 = medImageTv1;
+    this.medNameTv = medNameTv;
+    this.medRecoveredTv = medRecoveredTv;
+    this.medSexTv = medSexTv;
+    this.medSsnTv = medSsnTv;
     this.medTimeTv = medTimeTv;
     this.medTypeTv = medTypeTv;
   }
@@ -101,6 +128,18 @@ public final class ItemMedicalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.medDiseaseName_tv;
+      TextView medDiseaseNameTv = ViewBindings.findChildViewById(rootView, id);
+      if (medDiseaseNameTv == null) {
+        break missingId;
+      }
+
+      id = R.id.medDiseaseNum_tv;
+      TextView medDiseaseNumTv = ViewBindings.findChildViewById(rootView, id);
+      if (medDiseaseNumTv == null) {
+        break missingId;
+      }
+
       id = R.id.medImage_tv;
       TextView medImageTv = ViewBindings.findChildViewById(rootView, id);
       if (medImageTv == null) {
@@ -110,6 +149,30 @@ public final class ItemMedicalBinding implements ViewBinding {
       id = R.id.medImage_tv1;
       ImageView medImageTv1 = ViewBindings.findChildViewById(rootView, id);
       if (medImageTv1 == null) {
+        break missingId;
+      }
+
+      id = R.id.medName_tv;
+      TextView medNameTv = ViewBindings.findChildViewById(rootView, id);
+      if (medNameTv == null) {
+        break missingId;
+      }
+
+      id = R.id.medRecovered_tv;
+      TextView medRecoveredTv = ViewBindings.findChildViewById(rootView, id);
+      if (medRecoveredTv == null) {
+        break missingId;
+      }
+
+      id = R.id.medSex_tv;
+      TextView medSexTv = ViewBindings.findChildViewById(rootView, id);
+      if (medSexTv == null) {
+        break missingId;
+      }
+
+      id = R.id.medSsn_tv;
+      TextView medSsnTv = ViewBindings.findChildViewById(rootView, id);
+      if (medSsnTv == null) {
         break missingId;
       }
 
@@ -126,7 +189,8 @@ public final class ItemMedicalBinding implements ViewBinding {
       }
 
       return new ItemMedicalBinding((LinearLayout) rootView, cardview, firstLin, imageIcon,
-          medImageTv, medImageTv1, medTimeTv, medTypeTv);
+          medDiseaseNameTv, medDiseaseNumTv, medImageTv, medImageTv1, medNameTv, medRecoveredTv,
+          medSexTv, medSsnTv, medTimeTv, medTypeTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
