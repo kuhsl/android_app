@@ -55,7 +55,49 @@
                         android:textSize="14sp" />
 
                     <TextView
+                        android:id="@+id/medName_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="마바사"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/medSex_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="마바사"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/medSsn_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="마바사"
+                        android:textSize="12sp" />
+
+                    <TextView
                         android:id="@+id/medTime_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="마바사"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/medRecovered_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="마바사"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/medDiseaseName_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="마바사"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/medDiseaseNum_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="마바사"
