@@ -82,6 +82,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        binding.btnAnalysis.setOnClickListener {
+            val intent = Intent(this, ScreenAnalysisResult::class.java)
+            intent.putExtra("base_url", base_url)
+            startActivity(intent)
+        }
+
         var getLoginResult = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
         ) {
