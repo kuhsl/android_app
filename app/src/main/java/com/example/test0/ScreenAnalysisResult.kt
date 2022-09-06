@@ -32,8 +32,8 @@ class ScreenAnalysisResult : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_analysis_result)
-        //val base_url = baseUrl()
-        val base_url = "https://90cbbd1c-3225-4b1a-8d3b-58b50031dd36.mock.pstmn.io"
+        val base_url = baseUrl()
+        //val base_url = "https://90cbbd1c-3225-4b1a-8d3b-58b50031dd36.mock.pstmn.io"
 
         loadEn1Data(base_url)
         loadEn2Data(base_url)

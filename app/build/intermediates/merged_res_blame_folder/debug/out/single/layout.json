@@ -1,50 +1,46 @@
 [
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\item_financial.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\item_financial.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_medical.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\item_medical.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_loginfin.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_loginfin.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_public.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\item_public.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_svrlogin.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_svrlogin.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\page_webview.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\page_webview.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_analysis_result.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_analysis_result.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\item_medical.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\item_medical.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_financial.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\item_financial.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_analysis_result.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_analysis_result.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_loginfin.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_loginfin.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_pub.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_pub.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_svrlogin.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_svrlogin.xml"
     },
     {
-        "merged": "com.example.test0.app-mergeDebugResources-33:/layout/activity_analysis_result.xml",
-        "source": "com.example.test0.app-main-36:/layout/activity_analysis_result.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\page_webview.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\page_webview.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\item_public.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\item_public.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pub.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_pub.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_fin.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_fin.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_med.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_med.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_med.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_med.xml"
-    },
-    {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-mergeDebugResources-33:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_fin.xml",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_fin.xml"
     }
 ]

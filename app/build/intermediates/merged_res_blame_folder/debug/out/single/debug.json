@@ -1,126 +1,122 @@
 [
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.test0.app-merged_res-34:/layout_activity_analysis_result.xml.flat",
-        "source": "com.example.test0.app-main-36:/layout/activity_analysis_result.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_item_public.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\item_public.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_med.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_med.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_btn_lock.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\drawable\\btn_lock.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_pub.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_pub.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable_ku_tiger_xml.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\drawable\\ku_tiger_xml.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ku_tiger.png.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\drawable\\ku_tiger.png"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_item_public.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\item_public.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_analysis_result.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_analysis_result.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_item_financial.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\item_financial.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_page_webview.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\page_webview.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_padlock.png.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\drawable\\padlock.png"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_item_medical.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\item_medical.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable_btn_lock.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\drawable\\btn_lock.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ku_tiger_xml.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\drawable\\ku_tiger_xml.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_svrlogin.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_svrlogin.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable_padlock.png.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\drawable\\padlock.png"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_med.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_med.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable_ku_tiger.png.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\drawable\\ku_tiger.png"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_page_webview.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\page_webview.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable_ku_tiger_black.png.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\drawable\\ku_tiger_black.png"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ku_tiger_black.png.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\drawable\\ku_tiger_black.png"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_loginfin.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_loginfin.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_item_financial.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\item_financial.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_fin.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_fin.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_item_medical.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\item_medical.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_svrlogin.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_svrlogin.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_fin.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_fin.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-pngs-29:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_analysis_result.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\layout\\activity_analysis_result.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_loginfin.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_loginfin.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-merged_res-34:\\layout_activity_pub.xml.flat",
-        "source": "C:\\Users\\KOREA\\.gradle\\daemon\\7.3.3\\com.example.test0.app-main-36:\\layout\\activity_pub.xml"
+        "merged": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     }
 ]
