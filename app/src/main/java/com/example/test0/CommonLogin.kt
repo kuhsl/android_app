@@ -42,6 +42,12 @@ class CommonLogin(context: Context, private val currCookie: String, private val 
                 webView.goForward()
             }
         }
+
+        //TODO: create public,private key using RSA-2048
+        //var pubkey=""
+        //var prvkey=""
+        //save private key on somewhere
+
         val targetUrl = "http://163.152.71.223/register"
         CookieManager.getInstance().setCookie(targetUrl, currCookie)
 
@@ -107,6 +113,12 @@ class CommonLogin(context: Context, private val currCookie: String, private val 
 
             fitsSystemWindows = true
         }
+
+        //TODO: modify to use postUrl instead of loadUrl
+        //val getData = "?scope=${URLEncoder.encode(scope0, "UTF-8")}"
+        //postData="key="+URLEncoder.encode(pubkey,"UTF-8")
+        //webView.postUrl(targetUrl+loadData,postData.getBytes())
+
         val loadData = "?scope=${URLEncoder.encode(scope0, "UTF-8")}"
         webView.loadUrl(targetUrl+loadData)
     }
