@@ -32,12 +32,17 @@ class ScreenAnalysisResult : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_analysis_result)
-        val base_url = baseUrl()
+        //TODO: modify request address - from operator to platform(engine1, engine2, engine3)
+        //val base_url = baseUrl()
         //val base_url = "https://90cbbd1c-3225-4b1a-8d3b-58b50031dd36.mock.pstmn.io"
 
-        loadEn1Data(base_url)
-        loadEn2Data(base_url)
-        loadEn3Data(base_url)
+        val e1_url = "http://163.152.71.223:8081"
+        val e2_url = "http://163.152.71.223:8082"
+        val e3_url = "http://163.152.71.223:8083"
+
+        loadEn1Data(e1_url)
+        loadEn2Data(e2_url)
+        loadEn3Data(e3_url)
     }
 
     fun loadEn1Data(base_url:String){

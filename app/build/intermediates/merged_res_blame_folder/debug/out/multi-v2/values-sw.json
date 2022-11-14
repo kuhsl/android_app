@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\KOREA\\Desktop\\code\\android_app-master\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw\\values-sw.xml",
+            "outputFile": "C:\\Users\\KOREA\\Desktop\\code\\android_app-platform\\android_app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw\\values-sw.xml",
             "map": [
                 {
                     "source": "C:\\Users\\KOREA\\.gradle\\caches\\transforms-3\\7d41cd8a5d82fd57439fdb8fd3dd7719\\transformed\\appcompat-1.4.1\\res\\values-sw\\values-sw.xml",

@@ -76,6 +76,7 @@ class SVRLogin : AppCompatActivity() {
                         Log.d("return intent", intent.toString())
                         finish()
                     } else {
+                        //cookie=null 인 경우
                         Log.d("tag", response.raw().toString())
                         dialogFailure(response.body().toString())
                     }

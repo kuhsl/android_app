@@ -1,6 +1,7 @@
 package com.example.test0
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
 import android.content.DialogInterface
@@ -9,18 +10,30 @@ import android.net.http.SslError
 import android.os.Build
 import android.os.Bundle
 import android.os.Message
+import android.security.keystore.KeyGenParameterSpec
+import android.security.keystore.KeyProperties
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.*
 import android.widget.ProgressBar
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.room.Fts4
 import kotlinx.android.synthetic.main.page_webview.*
+import java.io.File
 import java.net.URLEncoder
+import java.security.GeneralSecurityException
+import java.security.KeyPair
+import java.security.KeyPairGenerator
 
 
 class CommonLogin(context: Context, private val currCookie: String, private val scope0: String, val interaction: Interaction? = null) : Dialog(context) {
 
     private lateinit var webView: WebView
     private lateinit var mProgressBar: ProgressBar
+    private lateinit var pubkey : String
+    private lateinit var prvkey : String
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,9 +57,20 @@ class CommonLogin(context: Context, private val currCookie: String, private val 
         }
 
         //TODO: create public,private key using RSA-2048
-        //var pubkey=""
-        //var prvkey=""
-        //save private key on somewhere
+
+        val keyUtil = CreateKeyRSA2048(scope0)
+        if(keyUtil.init()){
+            pubkey=keyUtil.getPubKey()
+        }
+
+        if(pubkey=="false") {
+            Toast.makeText(this.context, "Generating key pair failed!", Toast.LENGTH_SHORT).show()
+            ActivityCompat.finishAffinity(this.context as Activity);
+        }else
+        {
+            Toast.makeText(this.context, "key pair has been generated successfully.", Toast.LENGTH_SHORT).show()
+            Log.d("msg", "generated public key: "+pubkey)
+        }
 
         val targetUrl = "http://163.152.71.223/register"
         CookieManager.getInstance().setCookie(targetUrl, currCookie)
@@ -115,12 +139,11 @@ class CommonLogin(context: Context, private val currCookie: String, private val 
         }
 
         //TODO: modify to use postUrl instead of loadUrl
-        //val getData = "?scope=${URLEncoder.encode(scope0, "UTF-8")}"
-        //postData="key="+URLEncoder.encode(pubkey,"UTF-8")
-        //webView.postUrl(targetUrl+loadData,postData.getBytes())
+        val getData = "?scope=${URLEncoder.encode(scope0, "UTF-8")}"
+        val postData="pubkey="+pubkey
+        webView.postUrl(targetUrl+getData,postData.toByteArray())
 
-        val loadData = "?scope=${URLEncoder.encode(scope0, "UTF-8")}"
-        webView.loadUrl(targetUrl+loadData)
+
     }
 
     inner class WebViewClientClass : WebViewClient() {
@@ -163,152 +186,11 @@ class CommonLogin(context: Context, private val currCookie: String, private val 
             dialog?.show()
         }
     }
+
+    private fun generateKeyPair(): KeyPair {
+        val kpg = KeyPairGenerator.getInstance("RSA")
+        kpg.initialize(2048)
+
+        return kpg.genKeyPair()
+    }
 }
-//
-//import android.annotation.SuppressLint
-//import android.app.Dialog
-//import android.content.Context
-//import android.content.Intent
-//import android.graphics.Rect
-//import android.net.Uri
-//import android.os.Build
-//import android.os.Bundle
-//import android.util.Log
-//import android.webkit.*
-//import androidx.appcompat.app.AlertDialog
-//import androidx.appcompat.app.AppCompatActivity
-//import kotlinx.android.synthetic.main.page_webview.*
-//import net.gotev.cookiestore.okhttp.JavaNetCookieJar
-//import okhttp3.Cookie
-//import okhttp3.CookieJar
-//import okhttp3.HttpUrl
-//import okhttp3.OkHttpClient
-//import retrofit2.Call
-//import retrofit2.Callback
-//import retrofit2.Response
-//import retrofit2.Retrofit
-//import retrofit2.converter.scalars.ScalarsConverterFactory
-//import java.net.CookieHandler
-//
-//class CommonLogin(context: Context, private val currCookie: String, val interaction: Interaction? = null) : Dialog(context) {
-//    private lateinit var webView: WebView
-//    @SuppressLint("SetJavaScriptEnabled")
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//
-////        val cookieManager = CookieHandler.getDefault()
-////        val okHttpClient = OkHttpClient.Builder()
-////            .cookieJar(JavaNetCookieJar(cookieManager))
-////            .build()
-////
-////        var retrofit = Retrofit.Builder()
-////            .client(okHttpClient)
-////            .baseUrl(url)
-////            .addConverterFactory(ScalarsConverterFactory.create())
-////            .build()
-////        var registerService: Register = retrofit.create(Register::class.java)
-////        registerService.requestRegister().enqueue(object: Callback<String> {
-////            override fun onFailure(call: Call<String>, t: Throwable) {
-////                Log.d("tag", "Error: " + t.message)
-////            }
-////
-////            override fun onResponse(call: Call<String>, response: Response<String>) {
-////                Log.d("tag", "msg: "+response.body())
-////            }
-////        })
-//
-////        setContentView(R.layout.page_webview)
-//
-//        webView = WebView(context)
-//        webView.isVerticalScrollBarEnabled = false
-//        webView.isHorizontalScrollBarEnabled = false
-//
-////        var cookieManager = CookieManager.getInstance()
-////
-////        cookieManager.setAcceptCookie(true)
-////        cookieManager.setAcceptThirdPartyCookies(webView, true)
-//
-////        CookieManager.getInstance().setCookie("http://192.168.0.3/register", currCookie)
-//        val webSettings = webView.settings
-//        webSettings.javaScriptEnabled = true
-//        webSettings.setSupportZoom(true)
-//        webSettings.builtInZoomControls = true
-//        webSettings.displayZoomControls = false
-//        webSettings.loadWithOverviewMode = true
-//        webView.webViewClient = NewWebViewClient()
-//
-//        webView.loadUrl("http://www.naver.com")
-//
-//    }
-//
-//    inner class NewWebViewClient : WebViewClient() {
-//
-//        override fun shouldOverrideUrlLoading(
-//            view: WebView?,
-//            request: WebResourceRequest?
-//        ): Boolean {
-//            view?.loadUrl(request?.url.toString())
-//            return false
-//        }
-//
-//        // For API 19 and below
-//        override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-//            Log.d("tag", "url: "+url)
-//            view.loadUrl(url)
-//            return false
-//        }
-//
-//        override fun onPageFinished(view: WebView?, url: String?) {
-//            super.onPageFinished(view, url)
-////            url?.let {
-////                val uri = Uri.parse(it)
-////                //status
-////                uri.getQueryParameter("status")?.let{status->
-////                    if(status =="fail"){
-////                        Toast.makeText(context, "로그인에 실패하였습니다. 다시 시도해주세요.", Toast.LENGTH_SHORT).show()
-////                        dismiss()
-////                    }else if(status=="success"){
-////                        uri.getQueryParameter("email")?.let{email->
-////                            interaction?.onLoginSuccess(email) //sub rather than email
-////                            dismiss()
-////                        }
-////                    }
-////                }
-////            }
-//            val displayRectangle = Rect()
-//            val window = window
-//            window?.decorView?.getWindowVisibleDisplayFrame(displayRectangle)
-//
-//            // Set height of the Dialog to 90% of the screen
-//            val layoutParams = view?.layoutParams
-//            layoutParams?.height = (displayRectangle.height() * 0.9f).toInt()
-//            view?.layoutParams = layoutParams
-//        }
-//    }
-//
-//    override fun onBackPressed() {
-//        if (webView.canGoBack()) {
-//            webView.goBack()
-//        } else {
-//            super.onBackPressed()
-//        }
-//    }
-//    /* val binding by lazy { ActivityLoginfinBinding.inflate(layoutInflater) }
-//
-//     override fun onCreate(savedInstanceState: Bundle?) {
-//         super.onCreate(savedInstanceState)
-//         setContentView(binding.root)
-//
-//         val webView = findViewById<WebView>(R.id.webView)
-//         webView.settings.apply {
-//             javaScriptEnabled = true
-//             domStorageEnabled = true
-//         }
-//         webView.apply {
-//             webViewClient = WebViewClient()
-//             webView.loadUrl("https://google.com")
-//         }
-//
-//     }
-//     */
-//}
