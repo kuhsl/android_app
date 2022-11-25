@@ -36,9 +36,9 @@ class ScreenAnalysisResult : AppCompatActivity() {
         //val base_url = baseUrl()
         //val base_url = "https://90cbbd1c-3225-4b1a-8d3b-58b50031dd36.mock.pstmn.io"
 
-        val e1_url = "http://163.152.71.223:8081"
-        val e2_url = "http://163.152.71.223:8082"
-        val e3_url = "http://163.152.71.223:8083"
+        val e1_url = "http://163.152.71.223:8084"
+        val e2_url = "http://163.152.71.223:8084"
+        val e3_url = "http://163.152.71.223:8084"
 
         loadEn1Data(e1_url)
         loadEn2Data(e2_url)
