@@ -151,7 +151,9 @@ class ScreenPub : AppCompatActivity() {
             }
 
         btnGetData.setOnClickListener {
+            Log.d("test#2","timestamp-[start]: "+System.currentTimeMillis())
             loadPubData(base_url, currCookie, scope0)
+            Log.d("test#2","timestamp-[start]: "+System.currentTimeMillis())
         }
 
         btnAddAccount.setOnClickListener {
